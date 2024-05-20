@@ -302,9 +302,8 @@ footer .flex {
 }
 footer .line-footer {
   padding: 20px 0;
- 
 }
-.borda{
+.borda {
   border-top: 2px solid blueviolet;
 }
 footer .line-footer p i {
@@ -320,4 +319,74 @@ footer .line-footer p {
   gap: 10px;
   align-content: center;
   align-items: center;
+}
+
+/* 940px x 636 */
+
+@media screen and (max-width: 1020px) {
+  /* CLASSE GERAIS */
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+  /* CABEÇALHO */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+
+  /* TOPO DO SITE */
+  section.topo-do-site .flex {
+    gap: 40px;
+  }
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+  .img-topo-site{
+    justify-content: center;
+    display: flex;
+  }
+  .img-topo-site img {
+    width: 80%;
+  }
+  /* ESTILO DAS ESPECIALIDADES  */
+  section.especialidades {
+    padding: 40px 8%;
+  }
+  /* SOBRE */
+  section.sobre{
+    padding: 80px 8%;
+  }
+
+  h2.titulo {
+    font-size: 34px;
+    line-height: 40px;
+  }
+ .sobre .txt-sobre h2{
+  text-align: center;
+ }
+ 
+.btn-social{
+  text-align: center;
+}
+img-sobre img{
+  width: 100%;
+}
+/* PORTFÓLIO */
+section.portfolio{
+  padding: 80px 8%;
+}
+.img-port {
+  width: 100%;
+  max-width: 460px;
+}
+section.portfolio .flex{
+  gap:60px;
+}
 }
