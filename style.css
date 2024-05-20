@@ -34,8 +34,14 @@ h2.titulo {
   font-size: 38px;
   text-align: center;
 }
-h2.titulo span {
+h2.titulo span,
+h4.titulo span {
   color: blueviolet;
+}
+h4.titulo {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -67,7 +73,8 @@ header nav ul li {
   padding: 0 40px;
 }
 
-.btn-contato button:hover,form .btn-enviar input:hover {
+.btn-contato button:hover,
+form .btn-enviar input:hover {
   box-shadow: 0px 0px 8px #5c5a5a;
   transform: scale(1.05);
 }
@@ -168,7 +175,7 @@ section.sobre .flex {
   margin: 20px 0;
   text-align: justify;
 }
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -177,7 +184,7 @@ section.sobre .flex {
   color: white;
   font-size: 25px;
 }
-.sobre .txt-sobre .btn-social i {
+.btn-social i {
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -190,7 +197,7 @@ section.sobre .flex {
 
 section.portfolio {
   padding: 80px 4%;
-  box-shadow: 0 0 40px 10px #2222223e;
+  box-shadow: 0 0 40px 10px #2222227c;
 }
 section.portfolio .flex {
   /* justify-content: space-around; */
@@ -270,16 +277,47 @@ form textarea {
 /* form input::placeholder{
  } para estilizar o placeholder */
 
- form .btn-enviar{
+form .btn-enviar {
   margin-top: 20px;
   text-align: center;
- }
+}
 
- form .btn-enviar input{
+form .btn-enviar input {
   width: 120px;
   background-color: blueviolet;
   color: #fff;
   font-weight: 600;
-  transition: .2s;
- }
+  transition: 0.2s;
+}
 
+/* Estilo do Rodapé */
+
+footer {
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #2222227c;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+footer .line-footer {
+  padding: 20px 0;
+ 
+}
+.borda{
+  border-top: 2px solid blueviolet;
+}
+footer .line-footer p i {
+  color: blueviolet;
+  font-size: 22px;
+}
+footer .line-footer p a {
+  color: #fff;
+}
+
+footer .line-footer p {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+}
